@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+ 
+<html lang="tr"> 
+<head> 
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+	<title>PassMan</title> 
+	<meta name="author" content="Dmitry Chestnykh"> 
+  <script src="popup.js"></script>
+  <link type="text/css" rel="stylesheet" href="popup.css">
+</head> 
+<body> 
+  <form id="main-form"> 
+    <table> 
+      <tr> 
+        <td class="label">Parola</td> 
+        <td class="input" colspan=2><input type="password" id="secret" value=""></td> 
+      </tr>
+      <tr> 
+        <td class="label">Kullanıcı adi</td> 
+        <td class="input" colspan=2><input type="text" spellcheck="false"  id="username" value=""></td> 
+      </tr>
+      <tr colspan=3>
+        <td class="label">URL</td> 
+        <td class="input" colspan=2><input type="text" spellcheck="false"  id="url" value=""></td> 
+      </tr>
+      <tr class="length"> 
+        <td class="label">Uzunluk</td> 
+        <td class="input">
+          <input type="text" id="length" value="25" size="2"> karakter
+        </td>
+        <td class="buttons">
+          <button id="fill-button"><b>&nbsp; Tamamla &nbsp;</b></button>
+          <button id="show-button">Goster</button>
+      </td></tr> 
+    </table> 
+  </form>
+  <div id="result-box"></div> 
+</body> 
+</html>
